@@ -114,3 +114,105 @@ Untracked files:
 
 no changes added to commit
 ]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git add .
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git [K[K[K[Kgit commit -m "revised file"
+[master 7a97e69] revised file
+ Committer: Annie Chang <anniechang@DN0a62b050.SUNet>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 13 files changed, 140 insertions(+), 22 deletions(-)
+ create mode 100644 .Rproj.user/B4234B5E/sources/s-B4673EBF/2F66EA64
+ create mode 100644 .Rproj.user/B4234B5E/sources/s-B4673EBF/2F66EA64-contents
+ create mode 100644 .Rproj.user/shared/notebooks/D4A56582-TokerSexLabeling/1/B4234B5EB4673EBF/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/D4A56582-TokerSexLabeling/1/s/cfwx9tj5mo4ca/000004.csv
+ create mode 100644 .Rproj.user/shared/notebooks/D4A56582-TokerSexLabeling/1/s/cfwx9tj5mo4ca/000005.error
+ rewrite .Rproj.user/shared/notebooks/D4A56582-TokerSexLabeling/1/s/chunks.json (100%)
+ create mode 100644 .Rproj.user/shared/notebooks/D4A56582-TokerSexLabeling/1/s/cy2dfdlqvgbxn/000006.csv
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git push origin master
+Counting objects: 26, done.
+Delta compression using up to 4 threads.
+Compressing objects:   4% (1/22)   Compressing objects:   9% (2/22)   Compressing objects:  13% (3/22)   Compressing objects:  18% (4/22)   Compressing objects:  22% (5/22)   Compressing objects:  27% (6/22)   Compressing objects:  31% (7/22)   Compressing objects:  36% (8/22)   Compressing objects:  40% (9/22)   Compressing objects:  45% (10/22)   Compressing objects:  50% (11/22)   Compressing objects:  54% (12/22)   Compressing objects:  59% (13/22)   Compressing objects:  63% (14/22)   Compressing objects:  68% (15/22)   Compressing objects:  72% (16/22)   Compressing objects:  77% (17/22)   Compressing objects:  81% (18/22)   Compressing objects:  86% (19/22)   Compressing objects:  90% (20/22)   Compressing objects:  95% (21/22)   Compressing objects: 100% (22/22)   Compressing objects: 100% (22/22), done.
+Writing objects:   3% (1/26)   Writing objects:   7% (2/26)   Writing objects:  11% (3/26)   Writing objects:  15% (4/26)   Writing objects:  19% (5/26)   Writing objects:  23% (6/26)   Writing objects:  26% (7/26)   Writing objects:  30% (8/26)   Writing objects:  34% (9/26)   Writing objects:  42% (11/26)   Writing objects:  46% (12/26)   Writing objects:  50% (13/26)   Writing objects:  53% (14/26)   Writing objects:  57% (15/26)   Writing objects:  61% (16/26)   Writing objects:  65% (17/26)   Writing objects:  69% (18/26)   Writing objects:  73% (19/26)   Writing objects:  76% (20/26)   Writing objects:  80% (21/26)   Writing objects:  84% (22/26)   Writing objects:  88% (23/26)   Writing objects:  92% (24/26)   Writing objects:  96% (25/26)   Writing objects: 100% (26/26)   Writing objects: 100% (26/26), 4.67 KiB | 0 bytes/s, done.
+Total 26 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/4)   [Kremote: Resolving deltas:  25% (1/4)   [Kremote: Resolving deltas:  75% (3/4)   [Kremote: Resolving deltas: 100% (4/4)   [Kremote: Resolving deltas: 100% (4/4), completed with 3 local objects.[K
+To https://github.com/anniechang215/fall2018.git
+   7808cfd..7a97e69  master -> master
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git add Figures
+fatal: pathspec 'Figures' did not match any files
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ mkdir Figures
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ add Figures
+bash: add: command not found
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git add Figures
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git commit -m "added first dir[K[K[Kfolder"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+	[31mmodified:   .Rproj.user/B4234B5E/console06/C23B2DCD[m
+
+no changes added to commit
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git push origin master
+Everything up-to-date
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git push origin master[C[1@ [1@-[1@u[C[1@ 
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git add /
+^A                         .fseventsd/                bin/                       private/
+.DS_Store                  .vol/                      cores/                     sbin/
+.DocumentRevisions-V100/   Applications/              dev/                       tmp/
+.MobileBackups/            Library/                   etc/                       usr/
+.PKInstallSandboxManager/  Network/                   home/                      var/
+.Spotlight-V100/           System/                    installer.failurerequests  
+.Trashes/                  Users/                     net/                       
+.file                      Volumes/                   opt/                       
+]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git add /
+^A                         .fseventsd/                bin/                       private/
+.DS_Store                  .vol/                      cores/                     sbin/
+.DocumentRevisions-V100/   Applications/              dev/                       tmp/
+.MobileBackups/            Library/                   etc/                       usr/
+.PKInstallSandboxManager/  Network/                   home/                      var/
+.Spotlight-V100/           System/                    installer.failurerequests  
+.Trashes/                  Users/                     net/                       
+.file                      Volumes/                   opt/                       
+]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git add /
+^A                         .fseventsd/                bin/                       private/
+.DS_Store                  .vol/                      cores/                     sbin/
+.DocumentRevisions-V100/   Applications/              dev/                       tmp/
+.MobileBackups/            Library/                   etc/                       usr/
+.PKInstallSandboxManager/  Network/                   home/                      var/
+.Spotlight-V100/           System/                    installer.failurerequests  
+.Trashes/                  Users/                     net/                       
+.file                      Volumes/                   opt/                       
+]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git add /Users/anniechang/Desktop/Research/Phase2/
+.Rproj.user/          Figures/              README.md             
+.git/                 Phase2.Rproj          TokerSexLabeling.Rmd  
+]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git add /Users/anniechang/Desktop/Research/Phase2/Figures
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git commit - m[K[Km "new dir"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+	[31mmodified:   .Rproj.user/B4234B5E/console06/C23B2DCD[m
+
+no changes added to commit
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ ls
+Figures			Phase2.Rproj		README.md		TokerSexLabeling.Rmd
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ cd Figures
+]0;~/Desktop/Research/Phase2/Figures]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2/Figuresanniechang@DN0a62b050:~/Desktop/Research/Phase2/Figures$ git add[K[K[K[K[K[K[KView(combined_df)ls[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+]0;~/Desktop/Research/Phase2/Figures]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2/Figuresanniechang@DN0a62b050:~/Desktop/Research/Phase2/Figures$ cd ..
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ mv TokerSexLabeling.Rmd [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmkdir Code
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ mv TokerSexLabeling.Rmd Code
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ ls
+Code		Figures		Phase2.Rproj	README.md
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ cd Code
+]0;~/Desktop/Research/Phase2/Code]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2/Codeanniechang@DN0a62b050:~/Desktop/Research/Phase2/Code$ ls
+TokerSexLabeling.Rmd
+]0;~/Desktop/Research/Phase2/Code]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2/Codeanniechang@DN0a62b050:~/Desktop/Research/Phase2/Code$ cd ..
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git add .
