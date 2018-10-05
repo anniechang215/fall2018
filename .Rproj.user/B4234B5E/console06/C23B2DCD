@@ -1,0 +1,38 @@
+bash: /opt/amber/amber.sh: No such file or directory
+bash: [[: DN0a62b050.SUNet: syntax error: invalid arithmetic operator (error token is ".SUNet")
+bash: [[: DN0a62b050.SUNet: syntax error: invalid arithmetic operator (error token is ".SUNet")
+]0;~/Desktop/Research/Phase2[?1034h]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ [K]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ clear
+[3J[H[2J]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ echo "# fall2018" >> README.md
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git init
+Initialized empty Git repository in /Users/anniechang/Desktop/Research/Phase2/.git/
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git add EAD[K[K[KREADME.md
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git commit -m "first commit"
+[master (root-commit) 83f3212] first commit
+ Committer: Annie Chang <anniechang@DN0a62b050.SUNet>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git remote add origin https://github.com/anniechang215/fall2018.git
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git push -u origin master
+Counting objects: 3, done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 229 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:[K
+remote:      https://github.com/anniechang215/fall2018/pull/new/master[K
+remote: 
+To https://github.com/anniechang215/fall2018.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+]0;~/Desktop/Research/Phase2]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ [K]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ [K]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ [K]0;anniechang@DN0a62b050: ~/Desktop/Research/Phase2anniechang@DN0a62b050:~/Desktop/Research/Phase2$ git add .

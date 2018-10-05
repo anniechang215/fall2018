@@ -1,0 +1,78 @@
+Sex-labels samples from the Toker dataset using X and Y chromosome iSEXS gene expression levels
+
+```{r}
+require('tidyverse')
+require('MetaIntegrator')
+gse10072 <- getGEOData("gse10072")
+expData <- gse10072$originalData$GSE10072$expr # expression data
+
+phenoTable <- gse10072$originalData$GSE10072$pheno
+combined_df <- cbind(rownames(phenoTable), phenoTable$`Gender:ch1`) # gets the predicted sex of each sample
+combined_df <- as.data.frame(combined_df)
+names(combined_df) <- c("samp_ids", "reported_sex")
+
+keys.vec <- gse10072$originalData$GSE10072$keys # mapping of genes to probe IDs
+keys.vec <- as.data.frame(keys.vec)
+names(keys.vec) <- c("gene")
+keys.vec$probe <- rownames(keys.vec)
+
+# genes on x chromosome that are more highly expressed in females
+x.probe <- filter(keys.vec, gene == 'AMMECR1' | gene == 'MORC4' | gene == 'NKRF' | gene == 'ZC4H2' | gene == 'PIM2' | gene == 'SHROOM4' | gene == 'ERCC6L') # include the x-chromosome escape genes here
+
+# genes on y chromosome that are more highly expressed in males
+y.probe <- filter(keys.vec, gene == 'KDM5D' | gene == 'RPS4Y1' | gene == 'EIF1AY' | gene == 'USP9Y' | gene == 'DDX3Y' | gene == 'UTY' | gene == 'PRKY' | gene == 'ZFY' | gene == 'TMSB4Y')
+
+y.vals <- expData[y.probe$probe, ]
+x.vals <- expData[x.probe$probe, ]
+
+### CODE FOR VISUAL SEX LABELING (whether the samples cluster into male and female)
+# gets the average of all expression data for a given sample
+if (length(x.probe[[1]]) > 1){ x.vals <- colMeans(x.vals, na.rm=TRUE) }
+if (length(y.probe[[1]]) > 1) { y.vals <- colMeans(y.vals, na.rm=TRUE)}
+
+# plot(x.vals, y.vals, ylab = "RPS4Y1", xlab="XIST") # the no color version
+
+### Code for clustering
+ssProbes.df <- t(expData[c(x.probe$probe, y.probe$probe),]) # extract the rows with the probes
+
+# cluster with kmeans
+cl <- kmeans(ssProbes.df, 2)
+# cl$cluster labels each sample 
+cl$cluster # cluster 1: males, cluster 2: females
+# color by cluster in the plot
+# plot(x.vals, y.vals, ylab="RPS4Y1", xlab="XIST", col = c("blue", "red")[as.factor(cl$cluster)])
+
+### CODE FOR SEX LABELING MANUAL (like adding a sex phenotype for each sample)
+whichClusters <- function(x) {
+  if (x[1] > x[2]) {
+    return (c("female", "male"))
+  }
+  else {
+    return (c("male", "female"))
+  }
+}
+
+cluster.labels <- whichClusters(cl$centers)
+clusters.df <- (as.data.frame(cl$cluster))
+names(clusters.df)[1] <- "cluster"
+clusters.df$samp_ids <- rownames(clusters.df)
+
+combined_df <- as.data.frame(full_join(combined_df, clusters.df, by = "samp_ids"))
+combined_df$predicted_sex <- cluster.labels[combined_df$cluster]
+combined_df <- cbind(combined_df, x.vals, y.vals)
+
+sexFirstEntry <- combined_df[1,4]
+clusterFirstEntry <- combined_df[1,3]
+if (sexFirstEntry == "female") { 
+  my.colors <- ifelse(combined_df$cluster == clusterFirstEntry, "red", "blue") 
+} else { my.colors <- ifelse(combined_df$cluster == clusterFirstEntry, "blue", "red") }
+
+plot(x.vals, y.vals, ylab = "y.vals", xlab = "x.vals", col = my.colors)
+```
+
+```{r}
+## My simple way
+geoMean_x <- geometric.mean(combined_df$x.vals)
+geoMean_y <- geometric.mean(combined_df$y.vals)
+studyScore <- geoMean_x - geoMean_y
+```
