@@ -1,0 +1,4 @@
+"0","geoMean_x <- geometric.mean(combined_df$x.vals)
+"
+"2","Error in log(x) : non-numeric argument to mathematical function
+"

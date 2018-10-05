@@ -1,0 +1,1 @@
+{"frames":[{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"geometric.mean(combined_df$x.vals)","line_number":0},{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"mean(log(x), na.rm = TRUE)","line_number":0}],"message":"Error in log(x) : non-numeric argument to mathematical function\n"}
